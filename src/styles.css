@@ -1,0 +1,11 @@
+body {
+    background-color: rgba(193, 202, 202, 0.512);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+app-root {
+    justify-content: center;
+    align-items: center;
+}

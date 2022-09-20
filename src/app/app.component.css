@@ -1,0 +1,57 @@
+.color {
+    background-color: rgb(247, 107, 107);
+}
+
+.color2 {
+    background-color: #ffffff;
+}
+
+p::before {
+    content: "•";
+}
+
+.container {
+    padding: 25px 300px 25px 200px;
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgb(85, 83, 83);
+    width: 100%;
+}
+
+.table thead tr {
+    background-color: rgb(186, 181, 181);
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+td {
+    border: 1px solid rgb(85, 83, 83);
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr {
+    background-color: #ffffff;
+}
+
+a {
+    color: rgb(0, 106, 255);
+}
+
+.pieContainer {
+    width: 50%;
+    height: 500x;
+    padding: 25px 300px 25px 200px;
+}

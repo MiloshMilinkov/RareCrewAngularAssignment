@@ -1,0 +1,23 @@
+<div class=" container ">
+    <table class="table table-bordered table-striped ">
+
+        <thead>
+            <tr>
+                <th>EmployeeName</th>
+                <th>OVerallTime</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="(key, value) in employes | groupBy: 'EmployeeName' ">
+            <tr *ngFor="let employes of employes " [ngClass]="{ 'color':(employes.OVerallTime< 100 ) } ">
+                <td><span>{{employes.EmployeeName}}</span></td>
+                <td><span>{{employes.OVerallTime}} hrs</span></td>
+                <td><a href="">Edit</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Red rows indicate workers who worked under one hundred hours.</p>
+</div>
+<div class="pieContainer">
+    <apx-chart [series]="pieDatainfo" [chart]="charDetails" [labels]="pieDataLabelinfo" [colors]="colors"></apx-chart>
+</div>
